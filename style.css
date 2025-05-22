@@ -1,0 +1,517 @@
+/* @layouts  */
+/* global layout */
+@layer global{
+     *{
+          margin: 0;
+          padding: 0;
+          box-sizing: 0;
+     }
+     
+}
+
+/* color layout */
+
+@layer colors {
+     :root {
+          --c-orange: #fa2803;
+          --c-gree: #66BB6A;
+          --c-purple: #AB47BC;
+          ---C-blue: #0303f5;
+          --c-dark: #222;
+          --c-light: #f9f9f9;
+          --c-accent: #fbd39b;
+
+     }
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+     background-color: #fff;
+     color: #333;
+     line-height: 1.6;
+     overflow-x: hidden;
+}
+
+.logo{
+     font-weight: 100;
+     font-size: 25px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ade{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navber{
+
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 1rem 2rem;
+     background-color: var(--c-accent);
+     box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+}
+
+.nav-links{
+     /* margin: 0 1rem; */
+     font-weight: 500;
+}
+
+a{
+     text-decoration: none;
+     margin:10px;
+     color: black;
+}
+
+.navber :hover{
+  transform: translate(ease-out 5s);
+}
+
+.siginin-btn{
+     background-color: #d1d1f698;
+     color: var(--c-dark);
+     border: 1px solid whitesmoke;
+     padding: 10px;
+     border-radius: 15px;
+     font-weight: 100;
+     font-size: 1rem;
+     margin-left: 20px;
+}
+
+.hero{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 2rem;
+     align-items: center;
+     justify-content: space-between;
+     background-color: var(--c-accent);
+
+}
+
+.hero-h1{
+     font-size: 50px;
+
+}
+
+.hero-span{
+     color: var(--c-orange);
+}
+
+.hero-paragrapha{
+     font-weight: 800;
+     font-size: larger 20px;
+     margin-bottom: 10px;   
+}
+
+.hero-btn{
+     margin-bottom:10px ;
+     margin-top: 10px;
+
+}
+
+.explor-btn{
+     padding: 10px;
+     background: none;
+     border: 1px solid ;
+     border-radius: 20px;
+}
+
+.wacth-btn{
+      padding: 10px;
+     background-color: var(--c-orange);
+     color: #f9f9f9;
+     border: none ;
+     border-radius: 20px;
+}
+
+.hero-image{
+     width: 100%;
+     height: 100%;
+     max-width: 500px;
+     max-height: 500px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+ .off{
+
+   background-color: #66BB6A;
+   color: var(--c-light);
+   display: block;
+   width: 20%;
+   padding: 5%;
+   border-radius: 80%/100%;
+   border: 2px solid var(--c-light);
+
+ }
+
+.future-card{
+     background: none;
+     padding: 1rem;
+     display: inline-flex;
+     border-radius: 10px;
+     box-shadow: 0 2px 2px rgba(0,0,0,0.01);
+}
+
+.ppp{
+     text-align: center;
+     font-size: 20px;
+     font-weight: 100;
+     color:#d3d3d3b0 ;
+}
+
+.futuredwith{
+     display: flex;
+     flex-wrap: wrap-reverse;
+     justify-content: center;
+     justify-content: space-around;
+     font-size:  30px;
+     font-weight: 800;
+     color: #d3d3d348;
+}
+
+.menu{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     gap: 1rem;
+     padding: 2rem;
+     justify-items: center;
+     align-items: center;
+     background-color: var(--c-accent);
+
+}
+
+.menu-card{
+     background-color: var(--c-accent);
+     padding: 1rem;
+     border-radius: 12px;
+     text-align: center;
+     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+     transition: transform 0.3s ease-out;
+
+}
+
+menu-card:hover{
+     transform: translate( -5px);
+     box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.menu-card.orange{
+   
+     border-top: 5px solid var(--c-orange);
+}
+.menu-card :hover{
+     border-top: 2px solid var(--c-light);
+     transform: rotate('angle 90');
+}
+
+.menu-card.green{
+     
+     border-top: 5px solid var(--c-gree);
+}
+.menu-card.purple{
+     
+     border-top: 5px solid var(--c-purple);
+}
+
+.menu-card.blue{
+     border-top: 5px solid blue;
+}
+
+.menu-card-img{
+     width: 100%;
+     height: 100%;
+     max-width: 200px;
+     max-height: 400px;
+     border-radius: 20px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.ordr-btn{
+     padding: 10px;
+     background-color: var(--c-orange);
+     color: #f9f9f9;
+     border: none ;
+     border-radius: 20px;
+     font-weight: 100;
+     font-size: 1rem;
+}
+
+.order-process {
+  background: #fff8f0;
+  padding: 60px 0 40px 0;
+  text-align: center;
+}
+
+.order-process h2 {
+  font-size: 2.2rem;
+  color: #d35400;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.seps {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.seps > div {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+  padding: 32px 28px 24px 28px;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 320px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.seps > div:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(211,84,0,0.13);
+}
+
+.seps h3 {
+  font-size: 1.25rem;
+  color: #222;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.seps p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.order-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: 10px;
+  border-radius: 50%;
+  background: #fff3e0;
+  box-shadow: 0 2px 12px rgba(211,84,0,0.08);
+  padding: 8px;
+}
+
+/* Delivery Info Section */
+.delivery-info {
+  background: #f9f6f2;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  border-radius: 18px;
+  margin: 40px 0 0 0;
+  box-shadow: 0 4px 24px rgba(250, 40, 3, 0.05);
+}
+
+.delivery-info h2 {
+  color: #fa2803;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.delivery-info p {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* About Section */
+.about {
+  background: #fff;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  border-radius: 18px;
+  margin: 40px 0 0 0;
+  box-shadow: 0 4px 24px rgba(171, 71, 188, 0.05);
+}
+
+.about h2 {
+  color: #ab47bc;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about p {
+  color: #444;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Contact Section */
+.content {
+  background: #fff8f0;
+  padding: 60px 0 40px 0;
+  text-align: center;
+  border-radius: 18px;
+  margin: 40px 0 0 0;
+  box-shadow: 0 4px 24px rgba(250, 40, 3, 0.05);
+}
+
+.content h2 {
+  color: #fa2803;
+  font-size: 2rem;
+  margin-bottom: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.content-form input,
+.content-form textarea {
+  width: 100%;
+  padding: 12px 12px;
+  border: 1px solid #fa2803;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #fff;
+  color: #333;
+  resize: none;
+  transition: border 0.2s;
+}
+
+.content-form input:focus,
+.content-form textarea:focus {
+  border: 2px solid #ab47bc;
+  outline: none;
+}
+
+.content-form button[type="submit"] {
+  background: #fa2803;
+  color: #fff;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.content-form button[type="submit"]:hover {
+  background: #ab47bc;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff;
+  padding: 32px 0 18px 0;
+  text-align: center;
+  border-radius: 18px 18px 0 0;
+  margin-top: 40px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.08);
+}
+
+.footer-content p {
+  margin: 8px 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.footer-content p:first-child {
+  font-weight: 700;
+  color: #fa2803;
+}
+
+/* WhatsApp Floating Link */
+.whatsapp {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  /* Reduce padding for smaller icon */
+ 
+
+  
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 999;
+
+}
+
+.whatsapp-icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .whatsapp {
+    right: 10px;
+    bottom: 10px;
+    padding: 6px 8px;
+  }
+  .whatsapp svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+/* Responsive */
+@media (max-width: 900px) {
+  .seps {
+    gap: 24px;
+  }
+  .seps > div {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .seps {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .order-process {
+    padding: 40px 0 24px 0;
+  }
+  .delivery-info, .about {
+    padding: 32px 10px 24px 10px;
+    margin: 24px 0 0 0;
+  }
+  .delivery-info p, .about p {
+    font-size: 1rem;
+  }
+  .content {
+    padding: 32px 10px 24px 10px;
+    margin: 24px 0 0 0;
+  }z
+  .footer {
+    padding: 18px 0 10px 0;
+    margin-top: 24px;
+  }
+  .whatsapp {
+    right: 12px;
+    bottom: 12px;
+    padding: 10px 16px;
+    font-size: 1rem;
+  }
+}
+
